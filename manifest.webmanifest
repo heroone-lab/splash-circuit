@@ -1,0 +1,1 @@
+{ "name": "Splash Circuit", "short_name": "Splash Circuit", "start_url": "./index.html", "display": "fullscreen", "orientation": "landscape", "background_color": "#0e1a28", "theme_color": "#16324a", "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }] }
