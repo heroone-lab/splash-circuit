@@ -1,0 +1,104 @@
+1. Boot / loading / menu
+  ✓ booted without console errors 
+  ✓ boot screen dismissed after loading
+  ✓ main menu items
+  ✓ menu → seasons screen
+  ✓ menu → courses screen
+  ✓ menu → character screen
+  ✓ menu → costumes screen
+  ✓ menu → settings screen
+  ✓ menu → tutorial screen
+  ✓ menu → credits screen
+  ✓ season menu shows 5 seasons
+  ✓ season 1: 3 episodes × 3 courses
+  ✓ course select shows ID/env/code/targets/chunks
+  ✓ first course unlocked
+2. All 45 courses (exact data + autopilot completion)
+  ✓ S01E01C1 Tiki     chunks=107-108-109-110 finished=true time=7.62s stars=3 cp=3 wipeouts=0
+  ✓ S01E01C2 Tiki     chunks=124-125-132-133 finished=true time=3.87s stars=3 cp=3 wipeouts=0
+  ✓ S01E01C3 Tiki     chunks=160-152-159-149-171 finished=true time=7.95s stars=3 cp=4 wipeouts=0
+  ✓ results screen shown
+  ✓ S01E02C1 Pirate   chunks=119-147-148-136 finished=true time=3.94s stars=3 cp=3 wipeouts=0
+  ✓ S01E02C2 Pirate   chunks=151-068-138-150 finished=true time=5.89s stars=3 cp=3 wipeouts=0
+  ✓ S01E02C3 Pirate   chunks=141-130-087-160-001 finished=true time=15.22s stars=2 cp=4 wipeouts=1
+  ✓ S01E03C1 Medieval chunks=132-140-143-146 finished=true time=4.26s stars=3 cp=3 wipeouts=0
+  ✓ S01E03C2 Medieval chunks=062-129-052-144 finished=true time=5.63s stars=3 cp=3 wipeouts=0
+  ✓ S01E03C3 Medieval chunks=141-129-124-000-166 finished=true time=25.42s stars=0 cp=4 wipeouts=2
+  ✓ S02E01C1 Fastfood chunks=075-007-074-001 finished=true time=36.04s stars=0 cp=3 wipeouts=3
+  ✓ S02E01C2 Fastfood chunks=027-162-126-121 finished=true time=4.69s stars=3 cp=3 wipeouts=0
+  ✓ S02E01C3 Fastfood chunks=132-157-086-060-010 finished=true time=15.96s stars=0 cp=4 wipeouts=1
+  ✓ S02E02C1 Forest   chunks=140-025-001-051 finished=true time=46.06s stars=0 cp=3 wipeouts=4
+  ✓ S02E02C2 Forest   chunks=013-049-026-060 finished=true time=11.72s stars=0 cp=3 wipeouts=1
+  ✓ S02E02C3 Forest   chunks=146-120-031-012-059 finished=true time=8.05s stars=3 cp=4 wipeouts=0
+  ✓ S02E03C1 Default  chunks=040-079-149-017 finished=true time=4.99s stars=3 cp=3 wipeouts=0
+  ✓ S02E03C2 Default  chunks=015-144-000-028 finished=true time=14.33s stars=2 cp=3 wipeouts=1
+  ✓ S02E03C3 Default  chunks=138-135-073-083-093 finished=true time=6.28s stars=3 cp=4 wipeouts=0
+  ✓ S03E01C1 Tiki     chunks=078-135-043-087 finished=true time=22.41s stars=0 cp=3 wipeouts=2
+  ✓ S03E01C2 Tiki     chunks=012-168-113-027-002 finished=true time=7.22s stars=3 cp=4 wipeouts=0
+  ✓ S03E01C3 Tiki     chunks=166-010-053-028-071 finished=true time=23.14s stars=0 cp=4 wipeouts=2
+  ✓ S03E02C1 Pirate   chunks=162-122-154-088 finished=true time=4.43s stars=3 cp=3 wipeouts=0
+  ✓ S03E02C2 Pirate   chunks=105-134-167-001-063 finished=true time=16.77s stars=0 cp=4 wipeouts=1
+  ✓ S03E02C3 Pirate   chunks=073-020-157-169-096 finished=true time=24.04s stars=0 cp=4 wipeouts=2
+  ✓ S03E03C1 Medieval chunks=047-139-072-059 finished=true time=23.55s stars=0 cp=3 wipeouts=2
+  ✓ S03E03C2 Medieval chunks=020-052-013-009-002 finished=true time=16.34s stars=1 cp=4 wipeouts=1
+  ✓ S03E03C3 Medieval chunks=069-005-163-078-067 finished=true time=6.79s stars=3 cp=4 wipeouts=0
+  ✓ S04E01C1 Fastfood chunks=063-060-026-048-017 finished=true time=16.76s stars=0 cp=4 wipeouts=1
+  ✓ S04E01C2 Fastfood chunks=136-106-135-000-166 finished=true time=7.85s stars=3 cp=4 wipeouts=0
+  ✓ S04E01C3 Fastfood chunks=031-170-015-075-102 finished=true time=17.02s stars=1 cp=4 wipeouts=1
+  ✓ S04E02C1 Forest   chunks=046-006-079-078-001 finished=true time=37.71s stars=0 cp=4 wipeouts=3
+  ✓ S04E02C2 Forest   chunks=054-018-103-159-048 finished=true time=30.24s stars=0 cp=4 wipeouts=2
+  ✓ S04E02C3 Forest   chunks=074-161-047-068-019 finished=true time=64.87s stars=0 cp=4 wipeouts=6
+  ✓ S04E03C1 Default  chunks=128-114-105-076-126 finished=true time=8.69s stars=3 cp=4 wipeouts=0
+  ✓ S04E03C2 Default  chunks=051-135-081-153-002 finished=true time=14.21s stars=1 cp=4 wipeouts=1
+  ✓ S04E03C3 Default  chunks=115-168-156-091-049 finished=true time=24.28s stars=0 cp=4 wipeouts=2
+  ✓ S05E01C1 Tiki     chunks=115-137-024-086-097 finished=true time=18.24s stars=0 cp=4 wipeouts=1
+  ✓ S05E01C2 Tiki     chunks=055-011-005-085-068 finished=true time=6.63s stars=3 cp=4 wipeouts=0
+  ✓ S05E01C3 Tiki     chunks=045-026-018-009-165-118 finished=true time=26.87s stars=0 cp=5 wipeouts=2
+  ✓ S05E02C1 Pirate   chunks=049-075-041-117-002 finished=true time=27.27s stars=0 cp=4 wipeouts=2
+  ✓ S05E02C2 Pirate   chunks=087-014-055-101-113 finished=true time=24.56s stars=0 cp=4 wipeouts=2
+  ✓ S05E02C3 Pirate   chunks=164-025-105-076-167-048 finished=true time=34.45s stars=0 cp=5 wipeouts=3
+  ✓ S05E03C1 Medieval chunks=028-079-010-097-096 finished=true time=35.30s stars=0 cp=4 wipeouts=3
+  ✓ S05E03C2 Medieval chunks=158-058-022-168-099 finished=true time=6.73s stars=3 cp=4 wipeouts=0
+  ✓ S05E03C3 Medieval chunks=083-163-153-103-137-094 finished=true time=28.04s stars=0 cp=5 wipeouts=2
+  ✓ no runtime errors during 45-course run 
+3. Brightness & visibility
+    Tiki     mean luminance 0.568
+    Pirate   mean luminance 0.530
+    Medieval mean luminance 0.520
+    Fastfood mean luminance 0.569
+    Forest   mean luminance 0.469
+    Default  mean luminance 0.409
+  ✓ all courses balanced exposure (no washed-out or crushed frames), player on screen
+4. Graphics quality
+  ✓ low: draws=75 tris=14540 fps(sw-render)=37 layout identical
+  ✓ medium: draws=74 tris=14940 fps(sw-render)=10 layout identical
+  ✓ high: draws=125 tris=30076 fps(sw-render)=10 layout identical
+5. Keyboard controls
+  ✓ D/→ moves forward (-1.50 → 1.06)
+  ✓ Space jumps
+  ✓ Esc opens pause menu
+6. Save / load
+  ✓ progress persisted across reload (45 course records, stars=61)
+  ✓ best-run ghost stored
+7. Touch & swipe controls (19.5:9 phone)
+  ✓ drag right in left 40% runs forward (-1.50 → 1.21)
+  ✓ swipe up on right side = jump
+  ✓ virtual jump/slide buttons visible on touch devices
+  ✓ no errors on mobile 
+8. Responsive UI
+  ✓ 16x9 (1280×720): menu and HUD buttons fully on-screen
+  ✓ 18x9 (1440×720): menu and HUD buttons fully on-screen
+  ✓ 19.5x9 (1560×720): menu and HUD buttons fully on-screen
+  ✓ 20x9 (1600×720): menu and HUD buttons fully on-screen
+  ✓ tablet-4x3 (1024×768): menu and HUD buttons fully on-screen
+  ✓ phone-19.5x9 (780×360): menu and HUD buttons fully on-screen
+9. Android asset bundle in an emulated Android WebView environment
+  ✓ Android platform adapter selected
+  ✓ hardware back at root menu lets the app exit
+  ✓ same course data in Android bundle (S05E03C3)
+  ✓ course completed in Android bundle (time 28.04s)
+  ✓ progress saved through the AndroidStorage bridge
+  ✓ hardware back in-game opens pause
+  ✓ no errors in Android bundle 
+
+✓ ALL BROWSER CHECKS PASSED

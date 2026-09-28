@@ -1,0 +1,22 @@
+{
+  "name": "splash-circuit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Realistic 2.5D side-scrolling 3D obstacle-course game — one shared codebase for Web and Android APK.",
+  "scripts": {
+    "validate": "node tools/validate-courses.mjs",
+    "test:sim": "node tools/sim-test.mjs",
+    "test:browser": "node tools/browser-test.mjs",
+    "test": "node tools/validate-courses.mjs && node tools/sim-test.mjs",
+    "build:web": "node tools/build.mjs web release",
+    "build:web:debug": "node tools/build.mjs web debug",
+    "build:android:assets": "node tools/build.mjs android release",
+    "build:android:assets:debug": "node tools/build.mjs android debug",
+    "apk:debug": "node tools/build.mjs android debug && cd android && ./gradlew assembleDebug",
+    "apk:release": "node tools/build.mjs android release && cd android && ./gradlew assembleRelease",
+    "serve": "node tools/serve.mjs dist/web 8080",
+    "dev": "node tools/serve.mjs . 8080"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,64 @@
+plugins { id 'com.android.application' }
+
+def keystorePropsFile = rootProject.file('keystore.properties')
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) keystoreProps.load(new FileInputStream(keystorePropsFile))
+
+android {
+    namespace 'com.example.splashcircuit'
+    compileSdk 34
+
+    defaultConfig {
+        // Placeholder application ID – replace with your own reverse-domain ID before publishing.
+        applicationId 'com.example.splashcircuit'
+        minSdk 26            // Android 8.0+: WebView with WebGL 2
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+        // Pure WebView app (no native code) – runs on arm64-v8a and all other ABIs.
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropsFile.exists()) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Falls back to the debug key if no keystore.properties exists (installable, not publishable).
+            signingConfig keystorePropsFile.exists() ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    buildFeatures { buildConfig true }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    androidResources { noCompress += ['js', 'css', 'html', 'svg'] }
+}
+
+// Make sure the shared web game is copied into the APK assets before building.
+tasks.register('checkWebAssets') {
+    doLast {
+        if (!file('src/main/assets/www/index.html').exists())
+            throw new GradleException("Web assets missing. Run 'node tools/build.mjs android release' (or debug) from the project root first.")
+    }
+}
+preBuild.dependsOn checkWebAssets
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.11.0'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+}
